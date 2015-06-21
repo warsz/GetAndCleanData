@@ -16,7 +16,8 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 ###Guide to creating the tidy data file
 start with downloading the "run_analysis.R" and execute it in RStudio with following command:
-	source("run_analysis.R")
+* source("run_analysis.R")
+
 the script does the following:
 1. checks if the data is available if not then it downloads the data-file
 2. unzip the data where the analysis script is placed
@@ -27,75 +28,76 @@ the script does the following:
 ##Description of the variables in the tiny_data.txt file
 General description of the file including:
  - Dimensions of the dataset 180x68
- - Variables present in the dataset : 
-1	subject						:  subject generating the measurements
-2	activity					:  activity done by the subject during measurement generation
-3	tBodyAcc.mean()-X			:  time domain body generated accelerometer data, Mean value in X-direction
-4	tBodyAcc.mean()-Y			:  time domain body generated accelerometer data, Mean value in Y-direction
-5	tBodyAcc.mean()-Z			:  time domain body generated accelerometer data, Mean value in Z-direction
-6	tBodyAcc.std()-X			:  time domain body generated accelerometer data, Standard deviation in X-direction
-7	tBodyAcc.std()-Y			:  time domain body generated accelerometer data, Standard deviation in Y-direction
-8	tBodyAcc.std()-Z			:  time domain body generated accelerometer data, Standard deviation in Z-direction
-9	tGravityAcc.mean()-X		:  time domain gravity generated accelerometer data, Mean value in X-direction
-10	tGravityAcc.mean()-Y		:  time domain gravity generated accelerometer data, Mean value in Y-direction
-11	tGravityAcc.mean()-Z		:  time domain gravity generated accelerometer data, Mean value in Z direction
-12	tGravityAcc.std()-X			:  time domain gravity generated accelerometer data, Standard deviation in X direction
-13	tGravityAcc.std()-Y			:  time domain gravity generated accelerometer data, Standard deviation in Y direction
-14	tGravityAcc.std()-Z			:  time domain gravity generated accelerometer data, Standard deviation in Z direction
-15	tBodyAccJerk.mean()-X		:  time domain body generated accelerometer dataJerk, Mean value in X direction
-16	tBodyAccJerk.mean()-Y		:  time domain body generated accelerometer dataJerk, Mean value in Y direction
-17	tBodyAccJerk.mean()-Z		:  time domain body generated accelerometer dataJerk, Mean value in Z direction
-18	tBodyAccJerk.std()-X		:  time domain body generated accelerometer dataJerk, Standard deviation in X direction
-19	tBodyAccJerk.std()-Y		:  time domain body generated accelerometer dataJerk, Standard deviation in Y direction
-20	tBodyAccJerk.std()-Z		:  time domain body generated accelerometer dataJerk, Standard deviation in Z direction
-21	tBodyGyro.mean()-X			:  time domain body generated gyroscope data, Mean value in X direction
-22	tBodyGyro.mean()-Y			:  time domain body generated gyroscope data, Mean value in Y direction
-23	tBodyGyro.mean()-Z			:  time domain body generated gyroscope data, Mean value in Z direction
-24	tBodyGyro.std()-X			:  time domain body generated gyroscope data, Standard deviation in X direction
-25	tBodyGyro.std()-Y			:  time domain body generated gyroscope data, Standard deviation in Y direction
-26	tBodyGyro.std()-Z			:  time domain body generated gyroscope data, Standard deviation in Z direction
-27	tBodyGyroJerk.mean()-X		:  time domain body generated gyroscope dataJerk, Mean value in X direction
-28	tBodyGyroJerk.mean()-Y		:  time domain body generated gyroscope dataJerk, Mean value in Y direction
-29	tBodyGyroJerk.mean()-Z		:  time domain body generated gyroscope dataJerk, Mean value in Z direction
-30	tBodyGyroJerk.std()-X		:  time domain body generated gyroscope dataJerk, Standard deviation in X direction
-31	tBodyGyroJerk.std()-Y		:  time domain body generated gyroscope dataJerk, Standard deviation in Y direction
-32	tBodyGyroJerk.std()-Z		:  time domain body generated gyroscope dataJerk, Standard deviation in Z direction
-33	tBodyAccMag.mean()			:  time domain body generated accelerometer data magnitude, Mean value
-34	tBodyAccMag.std()			:  time domain body generated accelerometer data magnitude, Standard deviation
-35	tGravityAccMag.mean()		:  time domain gravity generated accelerometer data magnitude, Mean value
-36	tGravityAccMag.std()		:  time domain gravity generated accelerometer data magnitude, Standard deviation
-37	tBodyAccJerkMag.mean()		:  time domain body generated accelerometer dataJerk magnitude, Mean value
-38	tBodyAccJerkMag.std()		:  time domain body generated accelerometer dataJerk magnitude, Standard deviation
-39	tBodyGyroMag.mean()			:  time domain body generated gyroscope data magnitude, Mean value
-40	tBodyGyroMag.std()			:  time domain body generated gyroscope data magnitude, Standard deviation
-41	tBodyGyroJerkMag.mean()		:  time domain body generated gyroscope dataJerk magnitude, Mean value
-42	tBodyGyroJerkMag.std()		:  time domain body generated gyroscope dataJerk magnitude, Standard deviation
-43	fBodyAcc.mean()-X			:  frequency domain body generated accelerometer data, Mean value in X direction
-44	fBodyAcc.mean()-Y			:  frequency domain body generated accelerometer data, Mean value in Y direction
-45	fBodyAcc.mean()-Z			:  frequency domain body generated accelerometer data, Mean value in Z direction
-46	fBodyAcc.std()-X			:  frequency domain body generated accelerometer data, Standard deviation in X direction
-47	fBodyAcc.std()-Y			:  frequency domain body generated accelerometer data, Standard deviation in Y direction
-48	fBodyAcc.std()-Z			:  frequency domain body generated accelerometer data, Standard deviation in Z direction
-49	fBodyAccJerk.mean()-X		:  frequency domain body generated accelerometer dataJerk, Mean value in X direction
-50	fBodyAccJerk.mean()-Y		:  frequency domain body generated accelerometer dataJerk, Mean value in Y direction
-51	fBodyAccJerk.mean()-Z		:  frequency domain body generated accelerometer dataJerk, Mean value in Z direction
-52	fBodyAccJerk.std()-X		:  frequency domain body generated accelerometer dataJerk, Standard deviation in X direction
-53	fBodyAccJerk.std()-Y		:  frequency domain body generated accelerometer dataJerk, Standard deviation in Y direction
-54	fBodyAccJerk.std()-Z		:  frequency domain body generated accelerometer dataJerk, Standard deviation in Z direction
-55	fBodyGyro.mean()-X			:  frequency domain body generated gyroscope data, Mean value in X direction
-56	fBodyGyro.mean()-Y			:  frequency domain body generated gyroscope data, Mean value in Y direction
-57	fBodyGyro.mean()-Z			:  frequency domain body generated gyroscope data, Mean value in Z direction
-58	fBodyGyro.std()-X			:  frequency domain body generated gyroscope data, Standard deviation in X direction
-59	fBodyGyro.std()-Y			:  frequency domain body generated gyroscope data, Standard deviation in Y direction
-60	fBodyGyro.std()-Z			:  frequency domain body generated gyroscope data, Standard deviation in Z direction
-61	fBodyAccMag.mean()			:  frequency domain body generated accelerometer data magnitude, Mean value
-62	fBodyAccMag.std()			:  frequency domain body generated accelerometer data magnitude, Standard deviation
-63	fBodyBodyAccJerkMag.mean()	:  frequency domain body generated accelerometer dataJerk magnitude, Mean value
-64	fBodyBodyAccJerkMag.std()	:  frequency domain body generated accelerometer dataJerk magnitude, Standard deviation
-65	fBodyBodyGyroMag.mean()		:  frequency domain body generated gyroscope data magnitude, Mean value
-66	fBodyBodyGyroMag.std()		:  frequency domain body generated gyroscope data magnitude, Standard deviation
-67	fBodyBodyGyroJerkMag.mean()	:  frequency domain body generated gyroscope dataJerk magnitude, Mean value
-68	fBodyBodyGyroJerkMag.std()	:  frequency domain body generated gyroscope dataJerk magnitude, Standard deviation 
+ - Variables present in the dataset :
+ 
+1.	subject						:  subject generating the measurements
+2.	activity					:  activity done by the subject during measurement generation
+3.	tBodyAcc.mean()-X			:  time domain body generated accelerometer data, Mean value in X-direction
+4.	tBodyAcc.mean()-Y			:  time domain body generated accelerometer data, Mean value in Y-direction
+5.	tBodyAcc.mean()-Z			:  time domain body generated accelerometer data, Mean value in Z-direction
+6.	tBodyAcc.std()-X			:  time domain body generated accelerometer data, Standard deviation in X-direction
+7.	tBodyAcc.std()-Y			:  time domain body generated accelerometer data, Standard deviation in Y-direction
+8.	tBodyAcc.std()-Z			:  time domain body generated accelerometer data, Standard deviation in Z-direction
+9.	tGravityAcc.mean()-X		:  time domain gravity generated accelerometer data, Mean value in X-direction
+10.	tGravityAcc.mean()-Y		:  time domain gravity generated accelerometer data, Mean value in Y-direction
+11.	tGravityAcc.mean()-Z		:  time domain gravity generated accelerometer data, Mean value in Z direction
+12.	tGravityAcc.std()-X			:  time domain gravity generated accelerometer data, Standard deviation in X direction
+13.	tGravityAcc.std()-Y			:  time domain gravity generated accelerometer data, Standard deviation in Y direction
+14.	tGravityAcc.std()-Z			:  time domain gravity generated accelerometer data, Standard deviation in Z direction
+15.	tBodyAccJerk.mean()-X		:  time domain body generated accelerometer dataJerk, Mean value in X direction
+16.	tBodyAccJerk.mean()-Y		:  time domain body generated accelerometer dataJerk, Mean value in Y direction
+17.	tBodyAccJerk.mean()-Z		:  time domain body generated accelerometer dataJerk, Mean value in Z direction
+18.	tBodyAccJerk.std()-X		:  time domain body generated accelerometer dataJerk, Standard deviation in X direction
+19.	tBodyAccJerk.std()-Y		:  time domain body generated accelerometer dataJerk, Standard deviation in Y direction
+20.	tBodyAccJerk.std()-Z		:  time domain body generated accelerometer dataJerk, Standard deviation in Z direction
+21.	tBodyGyro.mean()-X			:  time domain body generated gyroscope data, Mean value in X direction
+22.	tBodyGyro.mean()-Y			:  time domain body generated gyroscope data, Mean value in Y direction
+23.	tBodyGyro.mean()-Z			:  time domain body generated gyroscope data, Mean value in Z direction
+24.	tBodyGyro.std()-X			:  time domain body generated gyroscope data, Standard deviation in X direction
+25.	tBodyGyro.std()-Y			:  time domain body generated gyroscope data, Standard deviation in Y direction
+26.	tBodyGyro.std()-Z			:  time domain body generated gyroscope data, Standard deviation in Z direction
+27.	tBodyGyroJerk.mean()-X		:  time domain body generated gyroscope dataJerk, Mean value in X direction
+28.	tBodyGyroJerk.mean()-Y		:  time domain body generated gyroscope dataJerk, Mean value in Y direction
+29.	tBodyGyroJerk.mean()-Z		:  time domain body generated gyroscope dataJerk, Mean value in Z direction
+30.	tBodyGyroJerk.std()-X		:  time domain body generated gyroscope dataJerk, Standard deviation in X direction
+31.	tBodyGyroJerk.std()-Y		:  time domain body generated gyroscope dataJerk, Standard deviation in Y direction
+32.	tBodyGyroJerk.std()-Z		:  time domain body generated gyroscope dataJerk, Standard deviation in Z direction
+33.	tBodyAccMag.mean()			:  time domain body generated accelerometer data magnitude, Mean value
+34.	tBodyAccMag.std()			:  time domain body generated accelerometer data magnitude, Standard deviation
+35.	tGravityAccMag.mean()		:  time domain gravity generated accelerometer data magnitude, Mean value
+36.	tGravityAccMag.std()		:  time domain gravity generated accelerometer data magnitude, Standard deviation
+37.	tBodyAccJerkMag.mean()		:  time domain body generated accelerometer dataJerk magnitude, Mean value
+38.	tBodyAccJerkMag.std()		:  time domain body generated accelerometer dataJerk magnitude, Standard deviation
+39.	tBodyGyroMag.mean()			:  time domain body generated gyroscope data magnitude, Mean value
+40.	tBodyGyroMag.std()			:  time domain body generated gyroscope data magnitude, Standard deviation
+41.	tBodyGyroJerkMag.mean()		:  time domain body generated gyroscope dataJerk magnitude, Mean value
+42.	tBodyGyroJerkMag.std()		:  time domain body generated gyroscope dataJerk magnitude, Standard deviation
+43.	fBodyAcc.mean()-X			:  frequency domain body generated accelerometer data, Mean value in X direction
+44.	fBodyAcc.mean()-Y			:  frequency domain body generated accelerometer data, Mean value in Y direction
+45.	fBodyAcc.mean()-Z			:  frequency domain body generated accelerometer data, Mean value in Z direction
+46.	fBodyAcc.std()-X			:  frequency domain body generated accelerometer data, Standard deviation in X direction
+47.	fBodyAcc.std()-Y			:  frequency domain body generated accelerometer data, Standard deviation in Y direction
+48.	fBodyAcc.std()-Z			:  frequency domain body generated accelerometer data, Standard deviation in Z direction
+49.	fBodyAccJerk.mean()-X		:  frequency domain body generated accelerometer dataJerk, Mean value in X direction
+50.	fBodyAccJerk.mean()-Y		:  frequency domain body generated accelerometer dataJerk, Mean value in Y direction
+51.	fBodyAccJerk.mean()-Z		:  frequency domain body generated accelerometer dataJerk, Mean value in Z direction
+52.	fBodyAccJerk.std()-X		:  frequency domain body generated accelerometer dataJerk, Standard deviation in X direction
+53.	fBodyAccJerk.std()-Y		:  frequency domain body generated accelerometer dataJerk, Standard deviation in Y direction
+54.	fBodyAccJerk.std()-Z		:  frequency domain body generated accelerometer dataJerk, Standard deviation in Z direction
+55.	fBodyGyro.mean()-X			:  frequency domain body generated gyroscope data, Mean value in X direction
+56.	fBodyGyro.mean()-Y			:  frequency domain body generated gyroscope data, Mean value in Y direction
+57.	fBodyGyro.mean()-Z			:  frequency domain body generated gyroscope data, Mean value in Z direction
+58.	fBodyGyro.std()-X			:  frequency domain body generated gyroscope data, Standard deviation in X direction
+59.	fBodyGyro.std()-Y			:  frequency domain body generated gyroscope data, Standard deviation in Y direction
+60.	fBodyGyro.std()-Z			:  frequency domain body generated gyroscope data, Standard deviation in Z direction
+61.	fBodyAccMag.mean()			:  frequency domain body generated accelerometer data magnitude, Mean value
+62.	fBodyAccMag.std()			:  frequency domain body generated accelerometer data magnitude, Standard deviation
+63.	fBodyBodyAccJerkMag.mean()	:  frequency domain body generated accelerometer dataJerk magnitude, Mean value
+64.	fBodyBodyAccJerkMag.std()	:  frequency domain body generated accelerometer dataJerk magnitude, Standard deviation
+65.	fBodyBodyGyroMag.mean()		:  frequency domain body generated gyroscope data magnitude, Mean value
+66.	fBodyBodyGyroMag.std()		:  frequency domain body generated gyroscope data magnitude, Standard deviation
+67.	fBodyBodyGyroJerkMag.mean()	:  frequency domain body generated gyroscope dataJerk magnitude, Mean value
+68.	fBodyBodyGyroJerkMag.std()	:  frequency domain body generated gyroscope dataJerk magnitude, Standard deviation 
 
 ## Description of each variable in tiny_data
    subject
