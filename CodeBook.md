@@ -22,6 +22,7 @@ start with downloading the "run_analysis.R" and execute it in RStudio with follo
 * source("run_analysis.R")
 
 the script does the following:
+
 1. checks if the data is available if not then it downloads the data-file
 2. unzip the data where the analysis script is placed
 3. reads the necessary files and combines those to a complete data set, steps 1-4
