@@ -32,13 +32,13 @@ Download the "run_analysis.R" file and save to where the data should be stored
 Set working directory in RStudio to where "run_analysis.R" file is stored
 Execute following command in RStudio
 
-* source("run_analysis.R) *
+* source("run_analysis.R)
 
 This will check if the original data set is available and if not download it and perform all 5 steps given in the Scope (above)
 The script also generates:
 
-*DescriptionToCodeBook.txt	: describing the variables name more clearly
-*SummaryToCodebook.txt		: describing each variable in more details
+* DescriptionToCodeBook.txt	: describing the variables name more clearly
+* SummaryToCodebook.txt		: describing each variable in more details
 
 These are in turn copied into CodeBook.md
 
