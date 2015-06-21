@@ -27,6 +27,8 @@ RStudio
 Version 0.98.1103 – © 2009-2014 RStudio, Inc.
 Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/534.34 (KHTML, like Gecko) Qt/4.8.3 Safari/534.34 Qt/4.8.3
 
+or newer...
+
 ####Execution
 Download the "run_analysis.R" file and save to where the data should be stored
 Set working directory in RStudio to where "run_analysis.R" file is stored
