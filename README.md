@@ -31,7 +31,7 @@ Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/534.34 (KHTML, like Gecko) Qt/4.
 Download the "run_analysis.R" file and save to where the data should be stored
 Set working directory in RStudio to where "run_analysis.R" file is stored
 Execute following command in RStudio
-* source("run_analysis.R)
+* source("run_analysis.R) *
 This will check if the original data set is available and if not download it and perform all 5 steps given in the Scope (above)
 The script also generates:
 *DescriptionToCodeBook.txt	: describing the variables name more clearly
@@ -40,6 +40,6 @@ These are in turn copied into CodeBook.md
 
 ------
 ## Deliverables
-+ tidy_data_set.txt			: file contains the results listed in point 5. written in Scope*
-+ DescriptionToCodeBook.txt	: describing the variables name more clearly*
-+ SummaryToCodebook.txt		: describing each variable in more details*
++ tidy_data_set.txt			: file contains the results listed in point 5. written in Scope
++ DescriptionToCodeBook.txt	: describing the variables name more clearly
++ SummaryToCodebook.txt		: describing each variable in more details
