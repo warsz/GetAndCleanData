@@ -118,7 +118,7 @@ NA
 NA
 
 
-tBodyAcc.mean...X
+tBodyAcc.mean...X  
 Min.   :0.2216  
 1st Qu.:0.2712  
 Median :0.2770  
