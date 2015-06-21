@@ -14,32 +14,32 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 The R script called run_analysis.R does the following. 
 
-*1.Merges the training and the test sets to create one data set.*
-*2.Extracts only the measurements on the mean and standard deviation for each measurement.*
-*3.Uses descriptive activity names to name the activities in the data set.*
-*4.Appropriately labels the data set with descriptive variable names.*
-*5.From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.*
+1. Merges the training and the test sets to create one data set.
+2. Extracts only the measurements on the mean and standard deviation for each measurement.
+3. Uses descriptive activity names to name the activities in the data set.
+4. Appropriately labels the data set with descriptive variable names.
+5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 ------
 ##Howto
-###Requirements:
+####Requirements:
 RStudio
 Version 0.98.1103 – © 2009-2014 RStudio, Inc.
 Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/534.34 (KHTML, like Gecko) Qt/4.8.3 Safari/534.34 Qt/4.8.3
 
-###Execution
+####Execution
 Download the "run_analysis.R" file and save to where the data should be stored
 Set working directory in RStudio to where "run_analysis.R" file is stored
 Execute following command in RStudio
-> source("run_analysis.R)
+* source("run_analysis.R)
 This will check if the original data set is available and if not download it and perform all 5 steps given in the Scope (above)
 The script also generates:
-DescriptionToCodeBook.txt	: describing the variables name more clearly
-SummaryToCodebook.txt		: describing each variable in more details
+*DescriptionToCodeBook.txt	: describing the variables name more clearly
+*SummaryToCodebook.txt		: describing each variable in more details
 These are in turn copied into CodeBook.md
 
 ------
 ## Deliverables
-tidy_data_set.txt			: file contains the results listed in point 5. written in Scope.
-DescriptionToCodeBook.txt	: describing the variables name more clearly
-SummaryToCodebook.txt		: describing each variable in more details
++ tidy_data_set.txt			: file contains the results listed in point 5. written in Scope*
++ DescriptionToCodeBook.txt	: describing the variables name more clearly*
++ SummaryToCodebook.txt		: describing each variable in more details*
