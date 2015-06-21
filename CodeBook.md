@@ -1,15 +1,18 @@
 ---
 title: "Codebook for Getting and Cleaning Data Course Project"
 author: Jakub Warszawski
-date: 2015-05-24
+date: 2015-06-21
 ---
 ##Project Description
 The scope of this project is to start with some supplied data and make it tidy.
 
 ###Notes on the raw data
 The data comes from following project:
+
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+
 and can be optained here:
+
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
 ##Creating the tidy data files
